@@ -47,7 +47,7 @@ From data readiness to reliable AI systems, we provide comprehensive services ta
 
 ## 📧 Contact
 
-- **Email:** zubiam@drdatadecisionintelligence.com
+- **Email:** zubiaml4l@gmail.com
 - **Website:** https://drdatadecisionintelligence.com
 - **Phone:** 414 544 7777
 
