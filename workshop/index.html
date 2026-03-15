@@ -46,8 +46,8 @@
     .nav-cta {
       background: var(--coral); color: var(--white);
       font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 0.5rem 1.25rem; border-radius: 8px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.625rem 1.5rem; border-radius: 8px;
       text-decoration: none; transition: opacity 0.2s;
     }
     .nav-cta:hover { opacity: 0.9; }
@@ -102,23 +102,22 @@
       margin-bottom: 2rem;
     }
     .hero-sub strong { color: var(--cream); font-weight: 500; }
-    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
-    .btn-primary {
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; }
+    .btn-primary, .btn-ghost {
       display: inline-block;
-      background: var(--coral); color: var(--white);
-      font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif; font-size: 0.75rem; font-weight: 600;
       letter-spacing: 0.12em; text-transform: uppercase;
-      padding: 1rem 2rem; border-radius: 8px;
-      text-decoration: none; transition: opacity 0.2s;
+      padding: 0.875rem 1.75rem; border-radius: 8px;
+      text-decoration: none; transition: opacity 0.2s, border-color 0.2s;
+    }
+    .btn-primary {
+      background: var(--coral); color: var(--white);
+      border: 2px solid var(--coral);
     }
     .btn-primary:hover { opacity: 0.9; }
     .btn-ghost {
-      display: inline-block;
-      border: 2px solid rgba(245, 237, 216, 0.4); color: var(--cream);
-      font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; font-weight: 600;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      padding: 1rem 2rem; border-radius: 8px;
-      text-decoration: none; transition: border-color 0.2s;
+      background: transparent;
+      border: 2px solid rgba(245, 237, 216, 0.5); color: var(--cream);
     }
     .btn-ghost:hover { border-color: var(--cream); }
     .hero-mascot { width: 160px; height: auto; }
@@ -214,7 +213,6 @@
       transition: border-color 0.2s, transform 0.2s;
     }
     .for-card:hover { border-color: var(--teal); transform: translateY(-3px); }
-    .for-icon { font-size: 1.75rem; margin-bottom: 1rem; }
     .for-card h3 {
       font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem;
       margin-bottom: 0.5rem; color: var(--navy);
@@ -347,8 +345,11 @@
       font-size: 1.1rem;
     }
     .cta-buttons {
-      display: flex; flex-wrap: wrap; gap: 1rem;
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
       justify-content: center; margin-bottom: 1.5rem;
+    }
+    .bottom-cta .btn-primary, .bottom-cta .btn-ghost {
+      margin: 0;
     }
     .bottom-cta .small {
       font-size: 0.9rem;
@@ -425,7 +426,7 @@
   </a>
   <div style="display:flex;gap:1rem;align-items:center;">
     <a class="nav-back" href="https://drdatadecisionintelligence.com">Back to main site</a>
-    <a class="nav-cta" href="https://calendly.com/zubiaml4l/15min">Book a Discovery Call</a>
+    <a class="nav-cta" href="https://calendly.com/zubiaml4l/15min">Book a Consultation Session</a>
   </div>
 </nav>
 
@@ -439,7 +440,8 @@
       You are either doing work AI should handle or handing over decisions only you should make. <strong>Neither is sustainable.</strong> This five-session workshop series shows you how to find the exact operating band where your expertise is amplified, not replaced.
     </p>
     <div class="hero-btns">
-      <a href="#sessions" class="btn-primary">See All Sessions</a>
+      <a href="https://calendly.com/zubiaml4l/15min" class="btn-primary">Book a Consultation Session</a>
+      <a href="#sessions" class="btn-ghost">See All Sessions</a>
       <a href="#deliverables" class="btn-ghost">What You Walk Out With</a>
     </div>
     <img src="/mascot-hero.png" alt="Dr. Data mascot" class="hero-mascot">
@@ -480,17 +482,14 @@
   <p class="lead">If your value is your judgment, your expertise, your relationships, your methodology, this series is designed for you.</p>
   <div class="for-grid">
     <div class="for-card">
-      <div class="for-icon">🎯</div>
       <h3>Coaches and Consultants</h3>
       <p>You are spending hours on prep, documentation, and follow-up that should be handled. Your clients hire you for your judgment, not your admin.</p>
     </div>
     <div class="for-card">
-      <div class="for-icon">⚖️</div>
       <h3>Advisors and Professionals</h3>
       <p>Financial advisors, attorneys, and HR practitioners with sensitive client data that cannot go into cloud tools. Your privacy requirement is a feature, not a limitation.</p>
     </div>
     <div class="for-card">
-      <div class="for-icon">🏢</div>
       <h3>Business Owners</h3>
       <p>You have tried AI tools and they have not saved you time. You are not doing it wrong. You are missing the five layers that make AI work for your specific practice.</p>
     </div>
@@ -608,8 +607,8 @@
   <h2>Ready to find your Zone?</h2>
   <p class="subhead">Start with a conversation. We will map your workflow and show you exactly where to begin.</p>
   <div class="cta-buttons">
-    <a href="https://calendly.com/zubiaml4l/15min" class="btn-primary">BOOK A DISCOVERY CALL</a>
-    <a href="tel:+14145447777" class="btn-ghost">CALL 414-544-7777</a>
+    <a href="https://calendly.com/zubiaml4l/15min" class="btn-primary">Book a Consultation Session</a>
+    <a href="tel:+14145447777" class="btn-ghost">Call 414-544-7777</a>
   </div>
   <p class="small">Or visit <a href="https://drdatadecisionintelligence.com">drdatadecisionintelligence.com</a> to learn more about Dr. Data Decision Intelligence services.</p>
 </section>
