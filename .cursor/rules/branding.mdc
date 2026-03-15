@@ -1,0 +1,15 @@
+---
+description: Site branding and design system - maintain visual integrity
+alwaysApply: true
+---
+
+# Dr. Data Branding
+
+When editing HTML, CSS, or any site content for drdatadecisionintelligence.com:
+
+1. **Read BRANDING.md first** — It defines colors, typography, components, and content guidelines.
+2. **Use only values from BRANDING.md** — No new fonts or hex codes. Match existing card, button, and section styles.
+3. **Follow content rules** — No em dashes, no QR codes, no pricing or session timing on workshop pages unless explicitly required.
+4. **Reuse existing assets** — Mascot at `/mascot-hero.png`, canonical contact info and CTA links from BRANDING.md.
+
+All new pages and components must feel like they belong on the main site.
