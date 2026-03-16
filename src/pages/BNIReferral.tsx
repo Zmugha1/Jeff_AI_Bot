@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Copy, Check, Share2, Mail, Globe } from 'lucide-react';
+import { ArrowLeft, Copy, Check, Share2, Mail, Phone, Globe } from 'lucide-react';
 import Navigation from '../sections/Navigation';
 
 function BNIReferral() {
