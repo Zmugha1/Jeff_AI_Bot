@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import sqlite3
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -89,7 +89,7 @@ def init_database() -> None:
             client_id = name_to_id.get(interaction["client_name"])
             if not client_id:
                 continue
-            interaction_date = (date.today() - pd.Timedelta(days=interaction["days_ago"])).date().isoformat()
+            interaction_date = (date.today() - timedelta(days=interaction["days_ago"])).isoformat()
             conn.execute(
                 """
                 INSERT INTO interactions (client_id, date, type, notes, sentiment)
