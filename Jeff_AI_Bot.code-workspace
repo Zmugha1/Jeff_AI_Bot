@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "Jeff_AI_Bot",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "git.openRepositoryInParentFolders": "never",
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true
+    }
+  }
+}
