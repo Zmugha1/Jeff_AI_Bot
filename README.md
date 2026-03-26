@@ -97,7 +97,7 @@ Your intelligent marketing assistant that can answer:
 ```
 Jeff_AI_Bot/
 ├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
+├── requirements.streamlit.txt  # Python deps for local Streamlit POC only
 ├── README.md              # This file
 ├── data/                  # Fake client data (CSV)
 ├── docs/                  # Proposal and architecture docs
@@ -144,7 +144,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. **Install dependencies**
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.streamlit.txt
 ```
 
 4. **Run the app**

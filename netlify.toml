@@ -1,5 +1,9 @@
 # Build from repository root. Leave "Base directory" EMPTY in Netlify UI
 # so this file is the single source of truth (avoids dashboard-react/dashboard-react/dist).
+#
+# Do not add a root requirements.txt: Netlify auto-runs pip on it (Python 3.14+),
+# which breaks old pins and is unnecessary for this static React deploy.
+# Streamlit POC: pip install -r requirements.streamlit.txt
 
 [build]
   command = "cd dashboard-react && npm ci && npm run build"
