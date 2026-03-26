@@ -41,13 +41,7 @@ A **dual-interface dashboard** that:
 
 ---
 
-## Repository
-
-Source code: [github.com/Zmugha1/Jeff_AI_Bot](https://github.com/Zmugha1/Jeff_AI_Bot)
-
-## Live demo
-
-After you deploy to [Streamlit Community Cloud](https://streamlit.io/cloud), replace the link below with your app URL.
+## 🚀 Live Demo
 
 **Try it now:** [Dashboard Link](your-streamlit-url-here)
 
