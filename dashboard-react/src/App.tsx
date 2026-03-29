@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { ExecutiveDashboard } from './pages/ExecutiveDashboard';
 import { ClientIntelligence } from './pages/ClientIntelligence';
-import { AIAssistant } from './pages/AIAssistant';
-import { ROICalculator } from './pages/ROICalculator';
+import { MyPractice } from './pages/MyPractice';
+import { BusinessGoals } from './pages/BusinessGoals';
+import { HealthInterventions } from './pages/HealthInterventions';
 import { Settings } from './pages/Settings';
 
 function App() {
-  const [activePage, setActivePage] = useState('executive');
+  const [activePage, setActivePage] = useState('morning');
   const [selectedClientId, setSelectedClientId] = useState<string | null>(null);
 
   const handleClientSelect = (clientId: string) => {
@@ -21,19 +22,21 @@ function App() {
 
   const renderPage = () => {
     switch (activePage) {
-      case 'executive':
+      case 'morning':
         return <ExecutiveDashboard onClientSelect={handleClientSelect} />;
+      case 'goals':
+        return <BusinessGoals />;
       case 'clients':
         return (
-          <ClientIntelligence 
-            selectedClientId={selectedClientId} 
-            onBack={handleBackToClients} 
+          <ClientIntelligence
+            selectedClientId={selectedClientId}
+            onBack={handleBackToClients}
           />
         );
-      case 'ai':
-        return <AIAssistant />;
-      case 'roi':
-        return <ROICalculator />;
+      case 'interventions':
+        return <HealthInterventions />;
+      case 'practice':
+        return <MyPractice />;
       case 'settings':
         return <Settings />;
       default:
@@ -42,7 +45,7 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen bg-slate-50">
+    <div className="flex h-screen" style={{ background: '#FEFAF5' }}>
       <Sidebar activePage={activePage} onPageChange={setActivePage} />
       <main className="flex-1 ml-64 overflow-auto">
         {renderPage()}
