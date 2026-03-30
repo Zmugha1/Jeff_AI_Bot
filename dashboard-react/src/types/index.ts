@@ -65,7 +65,7 @@ export interface NavItem {
 }
 
 export interface ChatMessage {
-  role: 'user' | 'bot';
+  role: 'user' | 'system';
   content: string;
   timestamp?: Date;
 }
