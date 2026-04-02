@@ -382,6 +382,14 @@ export function ExecutiveDashboard({ onClientSelect }: ExecutiveDashboardProps) 
     color: '#2D4459',
   };
 
+  const hour = new Date().getHours();
+  const executiveGreeting =
+    hour < 12
+      ? 'Good morning, Deepika.'
+      : hour < 18
+        ? 'Good afternoon, Deepika.'
+        : 'Good evening, Deepika.';
+
   return (
     <div
       className="p-8 animate-fade-in"
@@ -403,7 +411,7 @@ export function ExecutiveDashboard({ onClientSelect }: ExecutiveDashboardProps) 
             marginBottom: '4px',
           }}
         >
-          Good morning, Jeff.
+          {executiveGreeting}
         </div>
         <div
           style={{
